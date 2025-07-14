@@ -8,7 +8,14 @@ This project is a mini AI-based tool that screens resumes against a job descript
 - Uses TF-IDF vectorization and cosine similarity
 - Real-world HR screening concept
 
-<pre> ## 📁 Folder Structure ``` AI-Resume-Screener/ ├── resumes/ # Folder of resumes (.txt or .pdf) ├── screener_txt.py # Basic version using .txt ├── screener_pdf.py # PDF version using PyMuPDF ├── requirements.txt └── README.md ``` </pre>
+## 📁 Folder Structure
+
+AI-Resume-Screener/<br>
+├── resumes/ # Folder of resumes (.txt or .pdf)<br>
+├── screener_txt.py # Basic version using .txt<br>
+├── screener_pdf.py # PDF version using PyMuPDF<br>
+├── requirements.txt<br>
+└── README.md<br>
 
 ## 🔧 How to Run
 
@@ -18,7 +25,15 @@ pip install -r requirements.txt
 ### 2. Run PDF Resume Screener
 python screener_pdf.py
 
-<pre> ## ✅ Sample Output ``` resume_python_ml.pdf: 58.3% match resume_ai_data.pdf: 51.69% match resume3.pdf: 18.18% match resume2.pdf: 16.36% match resume1.pdf: 6.22% match resume5.pdf: 2.53% match resume4.pdf: 2.51% match ``` </pre>
+## ✅ Sample Output
+
+resume_python_ml.pdf: 58.3% match<br>
+resume_ai_data.pdf: 51.69% match<br>
+resume3.pdf: 18.18% match<br>
+resume2.pdf: 16.36% match<br>
+resume1.pdf: 6.22% match<br>
+resume5.pdf: 2.53% match<br>
+resume4.pdf: 2.51% match<br>
 
 ⚠️ Note: TF-IDF matches exact words. If resumes use synonyms or different phrasing, similarity scores will be lower. For better matching, we can use BERT, sentence embeddings, or keyword expansion in future versions.
 
